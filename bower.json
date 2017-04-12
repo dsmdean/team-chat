@@ -1,0 +1,21 @@
+{
+  "name": "team-chat",
+  "description": "Simple chat service",
+  "main": "index.js",
+  "authors": [
+    "Dean Menso"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dsmdean/team-chat",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

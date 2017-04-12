@@ -1,0 +1,168 @@
+/*
+ * Base structure
+ */
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+/*
+ * Sidebar
+ */
+
+#sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: #2d3e50;
+    color: #fff;
+    border-right: 1px solid #213242;
+    transition: margin-left .5s;
+}
+
+#sidebar h3 {
+    padding: 15px;
+}
+
+#sidebar h4 {
+    color: #b4b9c0;
+}
+
+#sidebar a {
+    color: #b4b9c0;
+    text-decoration: none;
+}
+
+#sidebar #header {
+    background-color: #213242;
+    margin: -40px -20px 0 -20px;
+    height: 8%;
+}
+
+.sidebar-header-glyph {
+    font-size: 14px;
+    margin: 0px 0 0 45px;
+}
+
+.sidebar-footer-glyph {
+    margin: 15px 0 0 -15px;
+}
+
+#sidebar #body {
+    padding: 20px 0;
+}
+
+#sidebar #body #direct_messages {
+    margin-top: 40px;
+}
+
+#sidebar #footer {
+    background-color: #213242;
+    margin-left: -20px;
+    height: 10%;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+    margin-right: -21px;
+    /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+.nav-sidebar>li>a {
+    color: #809094;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar>li>a:hover,
+.nav-sidebar>li>a:focus {
+    background-color: #213242;
+}
+
+.nav-sidebar>.active>a,
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus {
+    color: #fbfcfc;
+    background-color: #213242;
+    border-left: 1px solid #e74b3d;
+}
+
+
+/*
+ * Main content
+ */
+
+#content {
+    padding-right: 40px;
+    padding-left: 40px;
+    transition: margin-left .5s;
+}
+
+#content .page-header {
+    margin-top: 0;
+}
+
+#search {
+    padding: 15px;
+}
+
+#content #messages {
+    margin-bottom: 120px;
+}
+
+#content #footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 110px;
+    margin-left: -40px;
+}
+
+#content #footer #send_message {
+    width: 80%;
+    padding: 20px 0px 0px 45px;
+}
+
+.red {
+    background-color: #e74b3d;
+}
+
+
+/*ll*/
+
+.menu {
+    margin-left: -43px;
+    background-color: #213242;
+}
+
+.menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}

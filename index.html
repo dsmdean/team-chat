@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Team Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="sidebar" class="col-sm-3 col-md-2">
+                <div id="header">
+                    <h3>team-chat</h3>
+                </div>
+                <div id="body">
+                    <div id="channels">
+                        <h4 id="channels_title">CHANNELS</h4>
+                        <ul class="nav nav-sidebar">
+                            <li><a href="#"># general</a></li>
+                            <li class="active"><a href="#"># feature requests <span class="badge red pull-right">5</span></a></li>
+                            <li><a href="#"># bug reports</a></li>
+                        </ul>
+                    </div>
+                    <div id="direct_messages">
+                        <h4 id="direct_messages_title">DIRECT MESSAGES</h4>
+                        <ul class="nav nav-sidebar">
+                            <li><a href="#">Martin</a></li>
+                            <li><a href="#">Jake</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="col-md-10">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div class="media-body">
+                                <strong class="media-heading">Dean Menso</strong>
+                                <p>Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+                <button class="menu" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div id="header" class="row">
+                    <div id="channel_title" class="col-md-9">
+                        <h3>Feature Requests</h3> <span onclick="openNav()">open</span>
+                    </div>
+                    <div id="search" class="col-md-3">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="messages">
+                    <div id="messages_list">
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
+                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
+                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
+                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
+                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
+                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+                            </div>
+                        </div>
+                        <div id="message" class="media">
+                            <div class="media-left">
+                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                            </div>
+                            <div id="message_content" class="media-body">
+                                <h5 class="no-margin"><strong>John</strong> <small>3:35 PM</small></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <form id="send_message">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
