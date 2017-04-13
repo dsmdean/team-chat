@@ -5,9 +5,12 @@
     <title>Team Chat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css styles/main.css -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -15,7 +18,9 @@
         <div class="row">
             <div id="sidebar" class="col-sm-3 col-md-2">
                 <div id="header">
-                    <h3>team-chat</h3>
+                    <h3>team-chat 
+                        <!--<span class="caret pull-right"></span>-->
+                    </h3>
                 </div>
                 <div id="body">
                     <div id="channels">
@@ -27,7 +32,7 @@
                         </ul>
                     </div>
                     <div id="direct_messages">
-                        <h4 id="direct_messages_title">DIRECT MESSAGES</h4>
+                        <h4 id="direct_messages_title">PARTICIPANTS</h4>
                         <ul class="nav nav-sidebar">
                             <li><a href="#">Martin</a></li>
                             <li><a href="#">Jake</a></li>
@@ -35,29 +40,22 @@
                     </div>
                 </div>
                 <div id="footer">
-                    <div class="col-md-10">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div class="media-body">
-                                <strong class="media-heading">Dean Menso</strong>
-                                <p>Logout</p>
-                            </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+                        </div>
+                        <div class="media-body">
+                            <strong class="media-heading">Dean Menso</strong>
+                            <p>Logout</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
-                <button class="menu" onclick="openNav()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
                 <div id="header" class="row">
                     <div id="channel_title" class="col-md-9">
-                        <h3>Feature Requests</h3> <span onclick="openNav()">open</span>
+                        <h3>Feature Requests</h3>
                     </div>
                     <div id="search" class="col-md-3">
                         <div class="form-group has-feedback">
@@ -176,9 +174,11 @@
         </div>
     </div>
 
+    <!-- build:js scripts/main.js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
