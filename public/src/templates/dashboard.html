@@ -1,0 +1,41 @@
+<div id="header" class="row">
+    <div id="channel_title" class="col-md-9">
+        <h3>Feature Requests</h3>
+    </div>
+    <div id="search" class="col-md-3">
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+        </div>
+    </div>
+</div>
+<div id="messages">
+    <div id="messages_list" ng-repeat="n in [1, 2, 3, 4, 5]">
+        <div id="message" class="media">
+            <div class="media-left">
+                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+            </div>
+            <div id="message_content" class="media-body">
+                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci in nulla lacinia
+                    luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
+            </div>
+        </div>
+        <div id="message" class="media">
+            <div class="media-left">
+                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
+            </div>
+            <div id="message_content" class="media-body">
+                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <form id="send_message">
+        <div class="form-group">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </form>
+</div>

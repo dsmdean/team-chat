@@ -13,14 +13,12 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body ng-app="team-chat">
     <div class="container-fluid">
         <div class="row">
             <div id="sidebar" class="col-sm-3 col-md-2">
                 <div id="header">
-                    <h3>team-chat 
-                        <!--<span class="caret pull-right"></span>-->
-                    </h3>
+                    <h3>team-chat</h3>
                 </div>
                 <div id="body">
                     <div id="channels">
@@ -52,125 +50,7 @@
                 </div>
             </div>
 
-            <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
-                <div id="header" class="row">
-                    <div id="channel_title" class="col-md-9">
-                        <h3>Feature Requests</h3>
-                    </div>
-                    <div id="search" class="col-md-3">
-                        <div class="form-group has-feedback">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="messages">
-                    <div id="messages_list">
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
-                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
-                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
-                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
-                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>5:05 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget. Nam cursus turpis nec sapien euismod vestibulum. Sed volutpat orci
-                                    in nulla lacinia luctus. Morbi lobortis facilisis porttitor. Mauris posuere neque tellus, eu sagittis tortor venenatis porta.</p>
-                            </div>
-                        </div>
-                        <div id="message" class="media">
-                            <div class="media-left">
-                                <img src="images/user.jpg" alt="user avatar" class="media-object img-rounded" width="50px">
-                            </div>
-                            <div id="message_content" class="media-body">
-                                <h5 class="no-margin"><strong>John</strong> <small>3:35 PM</small></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a elit ipsum. Phasellus vulputate risus leo, at sollicitudin magna venenatis eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="footer">
-                    <form id="send_message">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <div ui-view id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2"></div>
         </div>
     </div>
 
@@ -178,6 +58,13 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/controllers/DashboardController.js"></script>
     <!-- endbuild -->
 </body>
 

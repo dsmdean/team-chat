@@ -23,7 +23,9 @@ module.exports = function(grunt) {
             all: {
                 src: [
                     'Gruntfile.js',
-                    'public/src/scripts/scripts.js'
+                    'public/src/scripts/scripts.js',
+                    'public/src/scripts/app.js',
+                    'public/src/scripts/controllers/{,*/}*.js'
                 ]
             }
         },
@@ -84,6 +86,11 @@ module.exports = function(grunt) {
                     cwd: 'public/src/images',
                     src: ['{,*/}*.{png,jpg,jpeg,gif,webp,svg}'],
                     dest: 'public/dist/images',
+                    expand: true
+                }, {
+                    cwd: 'public/src/templates',
+                    src: ['**'],
+                    dest: 'public/dist/templates',
                     expand: true
                 }]
             },
